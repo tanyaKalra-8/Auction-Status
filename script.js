@@ -54,6 +54,10 @@ function addDataOnToUI(resultsList) {
         let cardContainer = document.createElement("div")
         cardContainer.className = "card";
         cardContainer.innerHTML = innerCard;
+        cardContainer.addEventListener("click", () => {
+          document.cookie = `card= ${JSON.stringify(card)}; path=/auction.html`
+          window.location.href= `http://localhost:5500/auction.html?case_number= ${card.caseNumber}`
+        })
 
         cardsContainer.append(cardContainer)
     }

@@ -20,6 +20,11 @@ header{
     border: 2px solid #A5A5A5;
     padding: 20px;
     border-radius: 8px;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+    overflow: hidden;
 }
 .price{
     float: right;
